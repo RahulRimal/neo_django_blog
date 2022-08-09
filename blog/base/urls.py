@@ -6,5 +6,5 @@ import base.views as views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('post/', views.post, name='post')
+    path('post/<int:post_id>', views.post, name='post')
 ]
